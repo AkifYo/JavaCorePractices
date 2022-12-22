@@ -15,7 +15,7 @@ public class A01_String_Manup {
         String emptyBox="";
         for (int i = text.length()-1; i >=0 ; i--) {
             emptyBox+=text.substring(i,i+1);
-
+            
         }
         if (text.equalsIgnoreCase(emptyBox)){
             System.out.println("Your test is Palindrome");
