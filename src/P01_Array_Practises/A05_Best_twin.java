@@ -2,7 +2,7 @@ package P01_Array_Practises;
 
 public class A05_Best_twin {
     public static void main(String[] args) {
-        int [] arr ={3,45,96,78,56,43};
+        int [] arr ={3,73,96,78,6,43};
 
         int num1=0;
         int count= arr[1]-arr[0];
