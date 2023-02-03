@@ -29,10 +29,12 @@ public class US01_TC_01 {
          WebElement logInBtn= Driver.getDriver().findElement(By.xpath("//a[@aria-owns='menu_mijn']"));
         // logInBtn.click();
         //inloggen button
-
+        ReusableMethods.bekle(2);
         actions.moveToElement(logInBtn).perform();
+        ReusableMethods.bekle(2);
         // click the log in button to reach the login page
-        WebElement logInBtn2= Driver.getDriver().findElement(By.xpath("//span[@class='f-menu-item__text']"));
+        WebElement logInBtn2= Driver.getDriver().findElement(By.xpath("(//span[text()='Inloggen'])[2]"));
+        ReusableMethods.bekle(2);
         logInBtn2.click();
 
 
