@@ -36,6 +36,20 @@ public class US01_TC_01 {
         WebElement logInBtn2= Driver.getDriver().findElement(By.xpath("(//span[text()='Inloggen'])[2]"));
         ReusableMethods.bekle(2);
         logInBtn2.click();
+        // locate the email taxt box end send your mail
+        WebElement mailTextBox= Driver.getDriver().findElement(By.id("username"));
+        ReusableMethods.bekle(1);
+
+        mailTextBox.sendKeys("akyor06@hotmail.com");
+        ReusableMethods.bekle(2);
+
+        WebElement mailPassword= Driver.getDriver().findElement(By.id("password"));
+        ReusableMethods.bekle(1);
+        mailPassword.sendKeys("233134");
+        WebElement loginBtn3= Driver.getDriver().findElement(By.xpath(("(//span[@class='button-or-anchor_label__6neDw'])[2]")));
+        ReusableMethods.bekle(1);
+        loginBtn3.click();
+
 
 
 
