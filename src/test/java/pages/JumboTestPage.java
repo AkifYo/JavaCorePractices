@@ -11,4 +11,18 @@ public class JumboTestPage {
     }
     @FindBy (id ="onetrust-reject-all-handler" )
     public WebElement cookiBtn;
+
+    @FindBy (xpath ="//span[text()='Mijn Jumbo']")
+    public WebElement mijnJumboBtn;
+
+    @FindBy (xpath =" //a[@class='item-link']")
+    public WebElement inlogBtn;
+
+    @FindBy (id ="username")
+    public WebElement usernameTextbox;
+    @FindBy (id ="password")
+    public WebElement passwordTextbox;
+    @FindBy (id ="submit")
+    public WebElement submitBtn;
+
 }
