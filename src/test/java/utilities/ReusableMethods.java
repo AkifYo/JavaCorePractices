@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.JumboTestPage;
 
 import java.io.File;
 import java.io.IOException;
@@ -146,5 +147,29 @@ public class ReusableMethods {
         });
 
         return element;
+    }
+    public static void  loginJumbo(String email, String password){
+        Actions actions= new Actions(Driver.getDriver());
+        Driver.getDriver().get(ConfigReader.getProperty("jumUrl"));
+        // locate the cookies btn end click it
+        ReusableMethods.bekle(2);
+        JumboTestPage jumboTestPage= new JumboTestPage();
+        jumboTestPage.cookiBtn.click();
+        ReusableMethods.bekle(2);
+        //navigate to mijn jumbo menu button
+        actions.moveToElement(jumboTestPage.mijnJumboBtn).perform();
+        ReusableMethods.bekle(1);
+        // then click it
+        jumboTestPage.mijnJumboBtn.click();;
+        // click to inlig btn to reach login page
+        jumboTestPage.inlogBtn.click();
+        //send the mail username textbox
+        jumboTestPage.usernameTextbox.sendKeys(email);
+        ReusableMethods.bekle(1);
+        // send the password to passwordtextbox
+        jumboTestPage.passwordTextbox.sendKeys(password);
+        ReusableMethods.bekle(1);
+        // click to login btn
+        jumboTestPage.submitBtn.click();
     }
 }

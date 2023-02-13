@@ -7,11 +7,11 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US_Jum_TC_01 {
+public class US_Jum_TC01 {
     Actions actions= new Actions(Driver.getDriver());
     @Test
     public void test01(){
-        // go to jum bo homepage
+        // go to jumbo homepage
         Driver.getDriver().get(ConfigReader.getProperty("jumUrl"));
         // locate the cookies btn end click it
         ReusableMethods.bekle(2);
