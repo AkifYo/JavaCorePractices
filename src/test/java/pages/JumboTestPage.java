@@ -24,5 +24,13 @@ public class JumboTestPage {
     public WebElement passwordTextbox;
     @FindBy (id ="submit")
     public WebElement submitBtn;
+    //products menu
+    @FindBy (xpath="//a[normalize-space()='Producten']")
+    public WebElement products;
+    @FindBy (xpath="//a[normalize-space()='Aardappelen, groente en fruit']")
+    public WebElement patatoes;
+
+    @FindBy (xpath="(//button[@data-testid='jum-button'])[12]")
+    public WebElement addBtn;
 
 }
