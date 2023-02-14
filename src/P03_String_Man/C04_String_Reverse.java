@@ -2,7 +2,7 @@ package P03_String_Man;
 
 import java.util.Scanner;
 
-public class C04_Strin_Reverse {
+public class C04_String_Reverse {
     public static void main(String[] args) {
         Scanner scan= new Scanner(System.in);
         System.out.println("Please enter a text");
@@ -19,7 +19,7 @@ public class C04_Strin_Reverse {
 
     }
     public static String reverseLetter(String s){
-        String reversedTextMethod="";
+        String reversedTextM="";
         int letterIndex=0;
         char [] letters= new char[s.length()];
         for (int i = s.length()-1; i >=0 ; i--) {
@@ -30,10 +30,10 @@ public class C04_Strin_Reverse {
 
         }
         for (int i = 0; i < s.length(); i++) {
-            reversedTextMethod=reversedTextMethod+letters[i];
+            reversedTextM=reversedTextM+letters[i];
         }
 
-        return reversedTextMethod;
+        return reversedTextM;
 
     }
 }
