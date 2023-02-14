@@ -14,5 +14,26 @@ public class C04_Strin_Reverse {
 
         }
         System.out.println(reversedText);
+
+        System.out.println(reverseLetter("akif yorulmaz"));
+
+    }
+    public static String reverseLetter(String s){
+        String reversedTextMethod="";
+        int letterIndex=0;
+        char [] letters= new char[s.length()];
+        for (int i = s.length()-1; i >=0 ; i--) {
+
+            letters[letterIndex]=s.charAt(i);
+            letterIndex++;
+            
+
+        }
+        for (int i = 0; i < s.length(); i++) {
+            reversedTextMethod=reversedTextMethod+letters[i];
+        }
+
+        return reversedTextMethod;
+
     }
 }
