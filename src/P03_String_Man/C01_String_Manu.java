@@ -2,7 +2,7 @@ package P03_String_Man;
 
 import java.util.Scanner;
 
-public class A01_String_Manup {
+public class C01_String_Manu {
     public static void main(String[] args) {
         Scanner scan= new Scanner(System.in);
         System.out.println("Please type en text");

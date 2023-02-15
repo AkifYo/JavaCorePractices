@@ -1,4 +1,4 @@
-package P02_Primne_Number;
+package P02_Prime_Number;
 
 import java.util.Arrays;
 
