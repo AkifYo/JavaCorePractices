@@ -40,11 +40,11 @@ public class A04_Ticket_Calculating {
                 travelDiscount=ticketDiscountPrice*0.10;
             } else if (travelType==2){
                 travelDiscount=ticketDiscountPrice*0.20;
+                travelDiscount*=2;
             }
+            System.out.println("The ticket price is :"+ticketPrice);
         }
 
     }
-   
-    
-    
+
 }
