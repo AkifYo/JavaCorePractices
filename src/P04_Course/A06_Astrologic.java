@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class A06_Astrologic {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your birth day :");
+        System.out.println("Please enter your birth of day :");
         int dayOfBirth = scanner.nextInt();
-        System.out.println("Please enter your birth month :");
+        System.out.println("Please enter your birth of month :");
         int monthOfBirth = scanner.nextInt();
 
         /*
@@ -15,7 +15,7 @@ public class A06_Astrologic {
         Virgo: Başak        Capricorn: Oğlak        Gemini: İkizler        Libra: Terazi
         Aquarius: Kova        Cancer: Yengeç        Scorpio: Akrep        Pisces: Balık
          */
-        if (monthOfBirth>0&&monthOfBirth<1){
+        if ((monthOfBirth>0 && monthOfBirth<12) && (dayOfBirth>0 && dayOfBirth<31)) {
            if (monthOfBirth==1){
                if (dayOfBirth<=21){
                     System.out.println("Capricorn");
@@ -101,7 +101,7 @@ public class A06_Astrologic {
                }
            }
         }else {
-            System.out.println("Invalid month");
+            System.out.println("Invalid month and day");
         }
 
     }
