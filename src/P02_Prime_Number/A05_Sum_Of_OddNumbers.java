@@ -7,18 +7,15 @@ public class A05_Sum_Of_OddNumbers {
         Scanner input = new Scanner(System.in);
         int number;
         int sum = 0;
-        System.out.println("Please enter a number: ");
-        number = input.nextInt();
-
         //solution 0
-//        do{
-//            System.out.println("Please enter a number: ");
-//            number = input.nextInt();
-//            sum += number;
-//        }while (number > 0);
-//        System.out.println("Sum of odd numbers is: " + sum);
+        do{
+            System.out.println("Please enter a number: ");
+            number = input.nextInt();
+            sum += number;
+        }while (number > 0);
+        System.out.println("Sum of odd numbers is: " + sum);
         //solution 1
-        while (number > 0) {
+       /* while (number > 0) {
             if (number % 2 == 1) {
                 sum += number;
             }
@@ -26,7 +23,7 @@ public class A05_Sum_Of_OddNumbers {
             number = input.nextInt();
         }
         System.out.println("Sum of odd numbers: " + sum);
-
+        */
         //solution 2
         /*
         while (true) {
