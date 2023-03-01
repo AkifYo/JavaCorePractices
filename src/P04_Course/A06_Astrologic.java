@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class A06_Astrologic {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your birth of day :");
+        System.out.println("Please enter your birth of day to see your future  :");
         int dayOfBirth = scanner.nextInt();
         System.out.println("Please enter your birth of month :");
         int monthOfBirth = scanner.nextInt();

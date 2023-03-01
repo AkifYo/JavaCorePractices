@@ -24,9 +24,9 @@ public class A02_Anagram {
             result=false;
         }
         if (result){
-            System.out.println("Your texts are anagram");
+            System.out.println("Your texts are anagram : you should be able to find the anagram");
         }else {
-            System.out.println("Your texts are NOT anagram");
+            System.out.println("Your texts are NOT anagram: you should NOT be able to find the anagram");
         }
 
     }
