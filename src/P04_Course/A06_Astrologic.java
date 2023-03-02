@@ -15,6 +15,7 @@ public class A06_Astrologic {
         Virgo: Başak        Capricorn: Oğlak        Gemini: İkizler        Libra: Terazi
         Aquarius: Kova        Cancer: Yengeç        Scorpio: Akrep        Pisces: Balık
          */
+        //can be different
         if ((monthOfBirth>0 && monthOfBirth<12) && (dayOfBirth>0 && dayOfBirth<31)) {
            if (monthOfBirth==1){
                if (dayOfBirth<=21){
