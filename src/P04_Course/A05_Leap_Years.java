@@ -10,9 +10,13 @@ public class A05_Leap_Years {
         System.out.println("Enter a year: ");
         int year = Integer.parseInt(scanner.nextLine());
         if ((year % 4 == 0 && year%100!=0) || (year % 400== 0)){
+            System.out.println("***|||||||***");
             System.out.println(year + " is a leap year");
+            System.out.println("***|||||||***");
         } else {
+            System.out.println("***|||||||***");
             System.out.println(year + " is not a leap year");
+            System.out.println("***|||||||***");
         }
 
     }
