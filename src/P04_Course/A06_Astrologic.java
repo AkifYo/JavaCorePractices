@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class A06_Astrologic {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Please enter your birth of day to see your future  :");
-        int dayOfBirth = scanner.nextInt();
+        int dayOfBirth = scan.nextInt();
         System.out.println("Please enter your birth of month :");
-        int monthOfBirth = scanner.nextInt();
+        int monthOfBirth = scan.nextInt();
 
         /*
         Aries: Koç        Leo: Aslan        Sagittarius: Yay        Taurus: Boğa
