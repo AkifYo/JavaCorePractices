@@ -15,5 +15,10 @@ public class A01_PowerOftheNumber {
 
         System.out.println("Please enter the limit value: ");
         int limit=scan.nextInt();
+        //i=1: i*=n
+        for (int i = 1; i <=limit ; i*=powerN) {
+            System.out.println(i);
+        }
+        
     }
 }
