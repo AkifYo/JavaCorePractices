@@ -19,6 +19,7 @@ public class A01_PowerOftheNumber {
         for (int i = 1; i <=limit ; i*=powerN) {
             System.out.println(i);
         }
+        // you shoul understan the structure of your question
         
     }
 }
